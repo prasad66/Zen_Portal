@@ -9,7 +9,7 @@ var json = [{
     "name": "Sam",
     "age": 25,
     "email": "sam@gmail.com"
-}
+},
 {
     "id": "3",
     "name": "Tom",
