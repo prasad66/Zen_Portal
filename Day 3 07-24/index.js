@@ -9,6 +9,12 @@ var json = [{
     "name": "Sam",
     "age": 25,
     "email": "sam@gmail.com"
+}
+{
+    "id": "3",
+    "name": "Tom",
+    "age": 21,
+    "email": "tom@gmail.com"
 }];
 console.log("*********************************For Loop*********************************");
 for (var i = 0; i < json.length; i++) {
