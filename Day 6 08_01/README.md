@@ -8,8 +8,8 @@ Link for the questions:
 
 Deployment Links:
 
-1.)
+1.) https://pensive-leavitt-544dc6.netlify.app/
 
-2.)
+2.) 
 
 3.)
