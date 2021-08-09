@@ -111,3 +111,6 @@ HTTP/1.1 clarified ambiguities and introduced numerous improvements:
  * It allows a server to populate data in a client cache, in advance of it being required, through a mechanism called the server push.
 
 Officially standardized, in May 2015, HTTP/2 has had much success. By July 2016, 8.7% of all Web sites were already using it (see these stats), representing more than 68% of all requests (see these statistics). High-traffic Web sites showed the most rapid adoption, saving considerably on data transfer overheads and subsequent budgets.
+
+
+``` ##### The 1st question is only to read and the 2nd question is to do codekata practice```
