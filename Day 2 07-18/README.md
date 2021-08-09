@@ -16,7 +16,7 @@
 
 <br>
  
- ![Timeline of HTTP](https://github.com/prasad66/August_07/blob/main/timeline.JPG)
+ ![Timeline of HTTP](https://github.com/prasad66/Zen_Portal/blob/main/Day%202%2007-18/timeline.JPG)
   
  <br>
  
