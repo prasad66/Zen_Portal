@@ -15,13 +15,13 @@ req.onload = () => {
 
 // Use the same rest countries and print all countries name, region, sub region and population
 
-var req = new XMLHttpRequest();
-req.open('GET', 'https://restcountries.eu/rest/v2/all');
-req.send();
-req.responseType = "json";
-req.onload = () => {
-    const resp = req.response;
-    console.log(resp.map(element => {
+var req1 = new XMLHttpRequest();
+req1.open('GET', 'https://restcountries.eu/rest/v2/all');
+req1.send();
+req1.responseType = "json";
+req1.onload = () => {
+    const resp1 = req.response;
+    console.log(resp1.map(element => {
         return {"country":element.name, "region":element.region, "subregion":element.subregion, "population":element.population}
     } ))
   
