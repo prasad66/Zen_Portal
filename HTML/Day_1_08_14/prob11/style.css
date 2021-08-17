@@ -1,0 +1,60 @@
+input {
+    color: rgb(155, 140, 140);
+  }
+  input[type="text"] {
+    /* width: 80%; */
+    padding: 7px 0px 0px;
+    border-bottom: 3px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 50px;
+    margin-bottom: 3px;
+    resize: vertical;
+    background: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    font-size: 20px;
+  }
+  input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+    }
+
+input[type="color"] {
+    width: 40px;
+    height: 30px;
+
+}
+  .inp {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .no-outline:focus {
+    outline: none;
+  }
+  select {
+    height: 30px;
+    width: 17.5%;
+    font-size: medium;
+  }
+  textarea {
+    margin-top: 10px;
+  }
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+  }
+  button.reset {
+    background-color: red;
+  }
+  legend {
+    font-size: larger;
+  }
+  fieldset {
+    padding-top: 30px;
+    padding-left: 35px;
+  }

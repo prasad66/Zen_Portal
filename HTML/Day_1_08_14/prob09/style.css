@@ -1,0 +1,50 @@
+input {
+    color: rgb(155, 140, 140);
+  }
+  input[type="text"] {
+    /* width: 80%; */
+    padding: 7px 0px 0px;
+    border-bottom: 3px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    resize: vertical;
+    background: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    font-size: 20px;
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+  .inp {
+    font-size: 20px;
+  }
+  .no-outline:focus {
+    outline: none;
+  }
+  select {
+    height: 30px;
+    width: 30%;
+    font-size: medium;
+  }
+  textarea {
+    margin-top: 50px;
+  }
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+  }
+  legend {
+    font-size: larger;
+  }
+  fieldset {
+    padding-top: 30px;
+    padding-left: 35px;
+  }
