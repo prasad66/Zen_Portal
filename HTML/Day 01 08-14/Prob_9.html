@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+  </head>
+  <body><link rel="stylesheet" href="./styles/style3.css">
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div class="row">
+          <div class="inp">
+            <label for="fname">First name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              value="Enter the First name"
+              class="no-outline"
+            />
+          </div>
+          <div class="inp">
+            <label for="lname">Last name:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              value="Enter the Last name"
+              class="no-outline"
+            />
+          </div>
+          <div class="inp">
+            <label for="country">Country:</label> &emsp;&emsp;&emsp;
+            <select id="country" name="country">
+              <option value="inida" selected>Select Your Country</option>
+              <option value="inida">India</option>
+              <option value="canada">Canada</option>
+              <option value="usa">United States of America</option>
+              <option value="aus">Austrila</option>
+            </select>
+          </div>
+          <div class="inp">
+            <label for="desc">Description:</label> &ensp;&emsp;
+            <textarea name="desc" rows="10" cols="30">
+Clear this and enter your Description.</textarea
+            >
+          </div>
+          <br />
+          <div class="inp">
+              Status:&emsp;&emsp;&emsp;&ensp;
+              <input type="checkbox" id="sal" name="sal" class="no-outline" /> &ensp;
+              <label for="sal"> Salaried</label>
+              &emsp;&emsp;&emsp;
+              <input type="checkbox" id="sal" name="sal" class="no-outline" /> &ensp;
+              <label for="sal"> Own_Business</label>
+          </div>
+
+          <br /><br />
+          <div class="inp">
+            <button type="button" onclick="alert('Hello World!')">
+              Submit
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
