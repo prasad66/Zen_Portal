@@ -20,7 +20,7 @@ req1.open('GET', 'https://restcountries.eu/rest/v2/all');
 req1.send();
 req1.responseType = "json";
 req1.onload = () => {
-    const resp1 = req.response;
+    const resp1 = req1.response;
     console.log(resp1.map(element => {
         return {"country":element.name, "region":element.region, "subregion":element.subregion, "population":element.population}
     } ))
