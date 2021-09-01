@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img
+              src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg"
+              width="30"
+              height="30"
+              alt="icon"
+              loading="lazy"
+              class="d-inline-block align-top"
+            />
+            Survey Form
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Facebook</a>
+                  <a class="dropdown-item" href="#">YouTube</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Github</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link active">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container my-5 border border-dark border-2">
+      <div class="row flex-row text-left name-box m-5">
+        <label class="form-control-label"
+          ><strong>Name</strong><span class="text-danger"> *</span></label
+        >
+        <div class="form-group col-sm-4 flex-column d-flex text-muted">
+          <input
+            type="text"
+            class="mt-3 p-1"
+            id="fname"
+            name="fname"
+            placeholder="Enter your first name"
+            onblur="validate(1)"
+          />
+          <label class="form-control-label">First</label>
+        </div>
+        <div class="form-group col-sm-4 flex-column d-flex text-muted">
+          <input
+            type="text"
+            class="mt-3 p-1"
+            id="lname"
+            name="lname"
+            placeholder="Enter your last name"
+            onblur="validate(2)"
+          />
+          <label class="form-control-label">Last</label>
+        </div>
+      </div>
+      <div class="row flex-row text-left email m-5">
+        <div class="form-group col-sm-8 flex-column d-flex">
+          <label class="form-control-label"
+            ><strong>Email</strong><span class="text-danger"> *</span></label
+          >
+          <input
+            type="text"
+            id="lname"
+            class="mt-3 p-1"
+            name="lname"
+            placeholder="Enter your last name"
+            onblur="validate(2)"
+          />
+        </div>
+      </div>
+      <div class="row flex-row text-left star m-5">
+        <label class="form-control-label"
+          ><strong>Your Experience</strong
+          ><span class="text-danger"> *</span></label
+        >
+        <span class="fa fa-2x fa-star text-warning my-2"></span>
+        <span class="fa fa-2x fa-star text-warning my-2"></span>
+        <span class="fa fa-2x fa-star text-warning my-2"></span>
+        <span class="fa fa-2x fa-star text-warning my-2"></span>
+        <span class="fa fa-2x fa-star text-warning my-2"></span>
+        <small>Overall, how would you rate your experience with us?</small>
+      </div>
+      <div class="row flex-row text-left satisfy table-responsive-md m-5">
+        <label class="form-control-label"
+          ><strong>How satidfied are you with</strong
+          ><span class="text-danger"> *</span></label
+        >
+        <table class="table table-striped table-borderless">
+          <thead>
+            <tr>
+              <th class="col"></th>
+              <th class="col">Very Unsatisfied</th>
+              <th class="col">Unsatisfied</th>
+              <th class="col">Neutral</th>
+              <th class="col">Satisfied</th>
+              <th class="col">Very Satisfied</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row me-0">Purchase</th>
+              <td class="align-middle text-center">Mark</td>
+              <td class="align-middle text-center">Otto</td>
+              <td class="align-middle text-center">@mdo</td>
+              <td class="align-middle text-center">Mark</td>
+              <td class="align-middle text-center">Otto</td>
+            </tr>
+            <tr>
+              <th class="row me-0">Service</th>
+              <td class="align-middle text-center">Jacob</td>
+              <td class="align-middle text-center">Thornton</td>
+              <td class="align-middle text-center">@fat</td>
+              <td class="align-middle text-center">Jacob</td>
+              <td class="align-middle text-center">Thornton</td>
+            </tr>
+            <tr>
+              <th class="row me-0">Company Overall</th>
+              <td class="align-middle text-center">Larry</td>
+              <td class="align-middle text-center">the Bird</td>
+              <td class="align-middle text-center">@twitter</td>
+              <td class="align-middle text-center">Larry</td>
+              <td class="align-middle text-center">the Bird</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row flex-row text-left table-responsive-md likely m-5">
+        <label class="form-control-label"
+          ><strong>How likely are you to</strong
+          ><span class="text-danger"> *</span></label
+        >
+        <table class="table table-striped table-borderless">
+          <thead>
+            <tr>
+              <th class="col"></th>
+              <th class="col">Very Unlikely</th>
+              <th class="col">Unlikely</th>
+              <th class="col">Neutral</th>
+              <th class="col">Likely</th>
+              <th class="col">Very Likely</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row me-0">Buy from us again</th>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="buyAgain"
+                  value="Very Unlikely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="buyAgain"
+                  value="Unlikely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="buyAgain"
+                  value="Neutral"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="buyAgain"
+                  value="Likely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="buyAgain"
+                  value="Very Likely"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="row me-0">Recommend our products to others</th>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="recommend"
+                  value="Very Unlikely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="recommend"
+                  value="Unlikely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="recommend"
+                  value="Neutral"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="recommend"
+                  value="Likely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="recommend"
+                  value="Very Likely"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="row me-0">Company Overall</th>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="overall"
+                  value="Very Unlikely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="overall"
+                  value="Unlikely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="overall"
+                  value="Neutral"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="overall"
+                  value="Likely"
+                />
+              </td>
+              <td class="align-middle text-center col">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="overall"
+                  value="Very Likely"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row flex-row text-left textarea m-5">
+        <div class="form-group flex-column d-flex">
+          <label class="form-control-label"
+            ><strong>Additional comments or suggestions</strong></label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            cols="13"
+          ></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-light p-3 m-5">Submit</button>
+    </div>
+    <footer></footer>
+  </body>
+</html>
