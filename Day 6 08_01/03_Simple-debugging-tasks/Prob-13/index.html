@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      aa = (data) => {
+        let ans='';
+        var a = data;
+        for (i = 0; i < a.length - 1; i++) {
+          var l = "";
+          var s = a[i + 1];
+          var b = a[i];
+          l += s;
+          l += b;
+          i = i + 1;
+          ans+=l;
+        }
+        console.log(l);
+        if (a.length % 2 != 0) {
+          l += a[a.length - 1];
+        }
+        console.log(ans);
+      };
+      aa("1234");
+    </script>
+  </head>
+  <body></body>
+</html>
