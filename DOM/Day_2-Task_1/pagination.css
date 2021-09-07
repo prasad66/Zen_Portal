@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+
+
+tbody > tr:nth-child(odd) {
+  background-color: #d8d8d8;
+}
+
+table{
+    border-collapse: collapse;
+    
+}
+
+
+th{
+    border:none;
+    padding: 15px;
+    background-color: #0970ff;
+    color: white;
+}
+/* .head>th:nth-child(1){
+    border-top-left-radius: 30px;
+}
+.head>th:last-child{
+    border-top-right-radius: 30px;
+} */
+
+.active{
+    background-color: #002456;
+    color: white;
+}
+.btn-group button {
+    margin-top: 25px;
+    background-color: #ffffff; /* Green background */
+    border: 1px solid rgb(184, 184, 184); /* Green border */
+    color: rgb(8, 5, 96); /* White text */
+    padding: 10px 15px; /*Some padding*/
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #caf7ee;
+    color: rgb(8, 5, 96);;
+  }
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    text-align: center;
+    /* width: 400px; */
+    background-color: #ecf0f3;
+    /* padding: 15px; */
+    border-radius: 30px;
+    box-shadow:inset 5px 5px 12px #ffffff,
+                 5px 5px 12px rgba(0,0,0,0.16);
+    width: 700px;
+    height: 500px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
