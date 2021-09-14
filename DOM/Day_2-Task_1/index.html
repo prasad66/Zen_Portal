@@ -1,41 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form-to-Table!!!</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="calculator.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/331797fb3b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container px-0 rounded-1"></div>
 
-    <script src="pagination.js" defer></script>
-    <link rel="stylesheet" href="pagination.css">
-   
-</head>
-<body>
-  
-    <div class="container d-flex justify-content-center bglight my-5 p-5">
-        
-        <div class="table">
-            <table class="table table-striped" id="our-table">
-                <thead>
-                    <tr class="head">
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-        
-                </tbody>
-            </table>
-            <div class="btn-container">
-                <div id="pagination" class="btn-group"></div>
-            </div>
-        </div>
-        
+    <div
+      class="
+        container-fluid container-1
+        d-flex
+        justify-content-center
+        align-items-center
+        flex-column
+        mt-0
+      "
+    >
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        id="alert"
+        role="alert"
+      >
+        <span><i class="fas fa-exclamation-triangle alert-danger"></i></span>
+        Only Numbers are allowed!!!
+        <button
+          type="button"
+          class="alert-danger border-0"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+          onclick="chgdisp()"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="calculator">
+        <input type="text" placeholder="0" class="fs-1" id="output" />
+        <button onclick="Clear()">C</button>
+        <button onclick="del()">del</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="display('/')">/</button>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button>
+        <button onclick="display('*')">*</button>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('-')">-</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('+')">+</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="display('0')">0</button>
+        <button onclick="Calculate()" class="equal">=</button>
+      </div>
     </div>
-    
-    
-    
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
