@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats!!!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container justify-content-center my-3">
+        <div class="card col-md-11">
+          <div class="card-header bg-primary fw-bold text-white">
+            <h1 class="card-title">CAT Images...</h1>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cat Images Generator:</h5>
+            <p class="card-text fw-bold">
+              This site here will make use of an API to generate random cat
+              images and you can copy the url of the images...
+            </p>
+
+            <div class="col-md-3 mb-3">
+              <button class="btn btn-primary col-sm-12" onclick="getImage()">
+                Generate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+
+        <!-- Image and link card -->
+        <div class="card my-4 border-0">
+          <div class="row d-flex flex-column align-items-center">
+            
+            <!-- image div -->
+            <div class="col-md-4" id="img-card"></div>
+
+            <div class="col-md-4 my-3 d-flex flex-column align-items-center">
+              <!-- Link Placeholder -->
+              <input
+                type="text"
+                class="form-control text-center image"
+                aria-label="Image link"
+                id="img-link"
+                disabled
+              />
+              <!-- Button to copy -->
+              <button id="copy" onclick="copyLink()">Copy!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
