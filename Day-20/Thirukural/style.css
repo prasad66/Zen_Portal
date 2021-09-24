@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ecf0f3;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* top image  */
+.image-banner {
+  background-image: url("http://www.plainsborotamilclub.com/wp-content/uploads/2019/05/thirukkural-banners_lqmqpk.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+
+/* customising the input fiels */
+input {
+  background-color: #ecf0f3;
+  box-shadow: inset -5px -5px 12px #ffffff,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 30px;
+  color: rgb(70, 70, 70);
+}
+
+
+/* making the spin arrows in number input box invisible */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* table alignment */
+.table td {
+  text-align: left;
+  border: none;
+}
+
+/* shadow for cards */
+.card {
+  box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+
+/* top-left border-radius */
+table tr:first-child td:first-child {
+  border-top-left-radius: 6px;
+}
+
+/* top-right border-radius */
+table tr:first-child td:last-child {
+  border-top-right-radius: 6px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+/* initially setting the error message display to none */
+#error {
+  display: none;
+  text-align: left;
+}
