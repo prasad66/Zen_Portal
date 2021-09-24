@@ -3,7 +3,7 @@ let imgLink = document.getElementById("img-link");  // link placeholder
 
 
 async function getImage() {
-  let response = await (await fetch("https://aws.random.cat/meow").ca).json();
+  let response = await (await fetch("https://aws.random.cat/meow")).json();
 
   // writing the image data into the placeholder
   imgPlace.innerHTML = `<img
