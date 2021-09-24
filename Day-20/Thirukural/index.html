@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="kural.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/331797fb3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+  </head>
+  <body>
+    <!-- top image banner -->
+    <div class="container-fluid image-banner"></div>
+
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <div class="container m-5 d-flex align-items-center flex-column">
+        <div class="row col-12 col-md-10 col-lg-4">
+          <p>
+            This site here use API to get the Kural number which you enter
+            here!!!
+          </p>
+
+          <!-- input field  -->
+          <input
+            class="form-control p-3 text-center"
+            type="number"
+            placeholder="Enter number from 1-1330"
+            min="0"
+            max="1330"
+            id="kuralNumber"
+            oninput="inputCheck()"
+          />
+        </div>
+
+        <!-- placeholder for error -->
+        <div
+          class="text-danger small fw-bolder text-start m-3"
+          id="error"
+        ></div>
+      </div>
+    </div>
+    <!-- place holder for result -->
+    <div class="container-fluid" id="new"></div>
+    <script src="kural.js" type="application/javascript"></script>
+  </body>
+</html>
