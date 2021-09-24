@@ -1,0 +1,5 @@
+/* hide the image, link placeholder and the copy button initially */
+.image,
+#copy {
+  display: none;
+}
